@@ -6,18 +6,6 @@
   "scripts": {
     "test": "jest"
   },
-  "keywords": [],
-  "lint-staged": {
-    "*.js": [
-      "standard --fix",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "author": "Giovana Roberta Cardoso",
   "license": "ISC",
   "devDependencies": {
