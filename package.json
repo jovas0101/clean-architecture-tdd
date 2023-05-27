@@ -7,9 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "Giovana Roberta Cardoso",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^4.3.8",
+    "lint-staged": "^13.2.2",
     "standard": "^17.0.0"
   }
 }
